@@ -1,23 +1,7 @@
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-
-
-// Assignment Code
+// Assign global variable for id generate
 var generateBtn = document.querySelector("#generate");
 
-// Define character sets
+// Assign global variable for all acceptable letters, numbers, and symbols
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numeric = "0123456789";

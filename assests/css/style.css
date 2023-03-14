@@ -1,9 +1,12 @@
+/* Universal boxing-size */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* html, body, and class wrapper adjustments in height, margin, and padding */
 html,
 body,
 .wrapper {
@@ -12,17 +15,20 @@ body,
   padding: 0;
 }
 
+/* Body receives font family and background color */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
+/* class wrapper receives padding adjustments */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* Header element receives text alignment, padding, and color */
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +36,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* Class card receives bg color, border, box-shadow, color, fontsize, margin, width, and padding */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -42,6 +49,7 @@ header {
   padding: 30px 40px;
 }
 
+/* Class card-header receives display of block, width, bg, and height */
 .card-header::after {
   content: " ";
   display: block;
@@ -50,6 +58,7 @@ header {
   height: 2px;
 }
 
+/* Class of card-body, card-footer receives display properties, content, bg color, height, border, font-size, height */
 .card-body {
   min-height: 100px;
 }
@@ -72,6 +81,7 @@ header {
   clear: both;
 }
 
+/* All button adjustments */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -97,6 +107,7 @@ button[disabled] {
   float: right;
 }
 
+/* id of password adjustment */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +129,8 @@ button[disabled] {
   overflow: hidden;
 }
 
+
+/* media querires adjustment for size of screen */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
